@@ -9,4 +9,4 @@
 [] If a user tries to view reviews for a thing, they should be redirected to the login form page.
 [x] You should implement the logout button functionality to clear the token in local storage.
 [x] You should update your database seeding data to use hashed passwords. Generate the hashed passwords using bcrypt.
-[] You'll also need to update your basic-auth middleware to use bcryptjs to compare the password in the basic token with the hash stored in the database.
+[x] You'll also need to update your basic-auth middleware to use bcryptjs to compare the password in the basic token with the hash stored in the database.
