@@ -10,3 +10,6 @@
 [x] You should implement the logout button functionality to clear the token in local storage.
 [x] You should update your database seeding data to use hashed passwords. Generate the hashed passwords using bcrypt.
 [x] You'll also need to update your basic-auth middleware to use bcryptjs to compare the password in the basic token with the hash stored in the database.
+[] You should create a POST /login endpoint that responds with a JWT.
+[] You should update your login form to call the login endpoint and store the JWT from the response in local storage. Ensure that all the API requests use this token instead of the basic token.
+[] You'll need to change your middleware for protected endpoints to verify the JWT instead of verifying the base64 encoded basic auth header.
