@@ -3,7 +3,7 @@ const app = require('../src/app')
 const helpers = require('./test-helpers')
 const jwt = require('jsonwebtoken')
 
-describe.only('Auth Endpoints', function() {
+describe('Auth Endpoints', function() {
   let db
 
   const { testUsers } = helpers.makeThingsFixtures()
@@ -80,7 +80,7 @@ describe.only('Auth Endpoints', function() {
             )
             return supertest(app)
             .post('/api/auth/login')
-            .send(expectedToken)
+            .send(userValidCreds)
             .expect(200, {
                 authToken: expectedToken,
             })

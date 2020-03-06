@@ -18,7 +18,7 @@ app.use(helmet())
 
 app.use('/api/things', thingsRouter)
 app.use('/api/reviews', reviewsRouter)
-app.use('./api/auth', authRouter)
+app.use('/api/auth', authRouter)
 
 app.use(function errorHandler(error, req, res, next) {
   let response
