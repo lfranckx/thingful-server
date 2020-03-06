@@ -13,3 +13,6 @@
 [x] You should create a POST /login endpoint that responds with a JWT.
 [x] You should update your login form to call the login endpoint and store the JWT from the response in local storage. Ensure that all the API requests use this token instead of the basic token.
 [x] You'll need to change your middleware for protected endpoints to verify the JWT instead of verifying the base64 encoded basic auth header.
+[x] You should support a registration form that performs POST requests to a registration endpoint.
+[x] The registration endpoint should appropriately validate the required fields, including unique usernames and complex non-ambiguous passwords.
+[x] You should store passwords as bcrypted hashes for better data protection.
