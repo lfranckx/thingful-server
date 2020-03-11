@@ -47,8 +47,6 @@ usersRouter
                                             .json(UsersService.serializeUser(user))
                                     })
                             })
-                    
-                    
                 })
                 .catch(next)
   })
